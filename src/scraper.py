@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-from dataclasses import dataclass
+from schemas import Article
 import re
 
 
@@ -10,20 +10,11 @@ pretty.install()
 print = pretty.pprint
 
 
-@dataclass
-class Article:
-    author: str
-    title: str
-    blurb: str
-    time: str
-    thumbnail: str
-    link: str
 
 def list_tags():
     url = "https://medium.com"
     req = requests.get(url)
     return re.findall(r"/tag/(.*?)\?", req.text)
-print(list_tags())
 
 
 def extract_articles_from_home():
