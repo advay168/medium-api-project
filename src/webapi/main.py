@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
-from schemas import Article
-import scraper
+from ..schemas import Article
+from .. import scraper
 
 import time
 

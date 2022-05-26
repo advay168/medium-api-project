@@ -1,5 +1,5 @@
 import aiohttp
-from schemas import Article
+from ..schemas import Article
 
 import re
 
