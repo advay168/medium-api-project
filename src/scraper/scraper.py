@@ -24,7 +24,7 @@ async def list_tags() -> list[str]:
 
 
 async def get_trending_articles(to: str) -> tuple[list[Article], str]:
-    trending_query[0]["variables"]["feedPagingOptions"]["to"] = to  # type: ignore
+    trending_query[0]["variables"]["feedPagingOptions"]["to"] = to
     async with aiohttp.ClientSession() as session:
         async with session.post(
             "https://medium.com/_/graphql", json=trending_query
@@ -50,8 +50,8 @@ async def get_trending_articles(to: str) -> tuple[list[Article], str]:
 
 
 async def get_trending_tagged_articles(tag: str, to: str) -> tuple[list[Article], str]:
-    trending_query[0]["variables"]["feedPagingOptions"]["to"] = to  # type: ignore
-    trending_query[0]["variables"]["tagSlug"] = tag  # type: ignore
+    tag_query[0]["variables"]["paging"]["to"] = to
+    tag_query[0]["variables"]["tagSlug"] = tag
     async with aiohttp.ClientSession() as session:
         async with session.post(
             "https://medium.com/_/graphql", json=tag_query

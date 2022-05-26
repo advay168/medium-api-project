@@ -39,7 +39,7 @@ async def hot(limit: int):
     while len(articles) < limit:
         more, to = await scraper.get_trending_articles(to)
         articles += more
-    return articles
+    return articles[:limit]
 
 
 @app.get("/hot/tag/{tag_name}/{limit}", response_model=list[Article])
@@ -52,4 +52,4 @@ async def hot_tag(tag_name: str, limit: int):
     while len(articles) < limit:
         more, to = await scraper.get_trending_tagged_articles(tag_name, to)
         articles += more
-    return articles
+    return articles[:limit]
