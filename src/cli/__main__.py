@@ -31,9 +31,22 @@ def display_articles(articles: list[Article]):
     console = Console()
     console.print(table)
 
+@app.command()
+def list_tags():
+    """
+    List the top tags from medium.com.
+    """
+    async def _():
+        print(*await scraper.list_tags(), sep="\n")
+    aiorun(_())
+
 
 @app.command()
 def trending(limit: int = 10):
+    """
+    Display {limit} trending articles from the homepage of medium.com
+    """
+
     async def _():
         articles: list[Article] = []
         to = str(time.time() * 1000)
@@ -45,8 +58,15 @@ def trending(limit: int = 10):
 
     aiorun(_())
 
+
 @app.command()
 def tag(tag: str, limit: int = 10):
+    """
+    Display {limit} trending articles for a particular {tag}. 
+   
+   \b
+    List top tags with the `list-tags` command
+    """
     async def _():
         articles: list[Article] = []
         to = "0"
@@ -57,6 +77,7 @@ def tag(tag: str, limit: int = 10):
         display_articles(articles)
 
     aiorun(_())
+
 
 if __name__ == "__main__":
     app()

@@ -3,16 +3,7 @@ from ..schemas import Article
 
 import re
 
-import json
-import pathlib
-
-# Extracted from analyzing network requests
-src = pathlib.Path(__file__).parent
-with open(src / "trending_query.json") as file:
-    trending_query = json.load(file)
-
-with open(src / "tag_query.json") as file:
-    tag_query = json.load(file)
+from .queries import *
 
 
 async def list_tags() -> list[str]:
