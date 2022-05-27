@@ -11,6 +11,7 @@ Visit the website at [https://medium-api-project.herokuapp.com/](https://medium-
       * [Run from source](#run-src)
       * [Build app](#build)
 2. [Technology used](#stack)
+3. [API Reference](#api-reference)
 
 ## Instructions for running locally <a name="local"></a>
 ### Prerequisites
@@ -75,3 +76,6 @@ rm -r ./build/
     * typer
     * rich
     * zipapp
+
+## API Reference
+The API reference is available at [/docs/API.md](/docs/API.md)
