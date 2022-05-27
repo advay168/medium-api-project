@@ -72,3 +72,6 @@ rm -r ./build/
     * regex
     * mypy
     * flake8
+    * typer
+    * rich
+    * zipapp
