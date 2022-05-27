@@ -1,4 +1,4 @@
-# API Documentation
+# Web API Documentation
 ## Routes
 ### Tags
 **URL**: `/tags`
