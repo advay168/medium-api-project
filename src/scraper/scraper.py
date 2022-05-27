@@ -3,7 +3,7 @@ from ..schemas import Article
 
 import re
 
-from .queries import *
+from .queries import trending_query, tag_query
 
 
 async def list_tags() -> list[str]:
