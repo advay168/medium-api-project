@@ -25,7 +25,7 @@ No parameters
 **Method**: `GET`
 
 #### Parameters:
-##### Path paramters:
+##### Path parameters:
 `limit`: Number of articles to request
 #### Response:
 **Code**: `200 OK`
@@ -51,7 +51,7 @@ No parameters
 **Method**: `GET`
 
 #### Parameters:
-##### Path paramters:
+##### Path parameters:
 `tag_name`: Name of tag to view articles of  
 `limit`: Number of articles to request
 #### Response:
