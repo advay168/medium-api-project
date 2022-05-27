@@ -20,4 +20,4 @@ subprocess.check_call(
 )
 
 
-zipapp.create_archive("build", "app.pyz", main="src.cli:app")
+zipapp.create_archive("build", "app.pyz", main="src.cli:app", compressed=True)
