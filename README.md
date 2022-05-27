@@ -2,7 +2,7 @@
 This project provides an API to explore trending articles on Medium.
 Visit the website at [https://medium-api-project.herokuapp.com/](https://medium-api-project.herokuapp.com/)
 
-# Table of Contents
+## Table of Contents
 1. [Instructions for running locally](#local)
    1. [Prerequisites](#prerequisites)
    2. [Web API](#web-api)
