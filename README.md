@@ -84,4 +84,4 @@ rm -r ./build/
 
 ## API Reference
 The API reference for the webapi is available at [/docs/web.md](/docs/web.md)
-The API reference for the CLI is available at [/docs/cli.md](/docs/cli.md)
+The API reference for the CLI is available at [/docs/cmdline.md](/docs/cmdline.md)
