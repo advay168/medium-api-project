@@ -78,4 +78,5 @@ rm -r ./build/
     * zipapp
 
 ## API Reference
-The API reference is available at [/docs/API.md](/docs/API.md)
+The API reference for the webapi is available at [/docs/web.md](/docs/web.md)
+The API reference for the CLI is available at [/docs/cli.md](/docs/cli.md)
