@@ -29,7 +29,7 @@ python-dotenv==0.20.0
 PyYAML==6.0
 rich==12.4.4
 sniffio==1.2.0
-starlette==0.19.1
+starlette==0.25.0
 tomli==2.0.1
 typer==0.4.1
 typing_extensions==4.2.0
